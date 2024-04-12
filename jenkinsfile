@@ -1,0 +1,80 @@
+pipeline {
+ 
+agent any
+ 
+environment {
+ 
+    IMAGE_NAME='pratham5425/productservice'
+ 
+    IMAGE_TAG='latest'
+ 
+}
+stages {
+ 
+stage('Checkout') {
+ 
+steps {
+ 
+ 
+checkout scm
+ 
+ 
+}
+ 
+}
+ 
+ 
+ 
+stage('Build') {
+ 
+steps {
+ 
+ 
+ 
+sh 'dotnet build'
+ 
+}
+ 
+}
+ 
+stage('Docker Build'){
+steps{
+script{
+docker.build("${IMAGE_NAME}:${IMAGE_TAG}")
+}
+}
+}
+ 
+stage('Docker Push'){
+ 
+    steps{
+ 
+        script{
+ 
+            docker.withRegistry('https://index.docker.io/v1/','docker_login'){
+ 
+ 
+                docker.image("${IMAGE_NAME}:${IMAGE_TAG}").push()
+ 
+            }
+        }
+ 
+    }
+ 
+}
+stage('Run container') {
+ 
+steps {
+ 
+script{
+sh 'docker stop devopsassignment '
+ sh'docker rm devopsassignment'
+    sh "docker run -d --name devopsassignment -p 1811:8080 ${IMAGE_NAME}:${IMAGE_TAG}"
+}
+ 
+}
+ 
+}
+}
+ 
+}
