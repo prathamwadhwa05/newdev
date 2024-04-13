@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = 'pratham5425/devopsapitest'
-        IMAGE_TAG = 1.2
+        IMAGE_TAG = '1.2'
     }
 
     stages {
@@ -16,6 +16,19 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'dotnet build'
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            environment {
+                scannerHome = tool 'SonarScanner for MSBuild'
+            }
+            steps {
+                withSonarQubeEnv() {
+                    sh "dotnet ${scannerHome}/SonarScanner.MSBuild.dll begin /k:\"DevOps\""
+                    sh "dotnet build"
+                    sh "dotnet ${scannerHome}/SonarScanner.MSBuild.dll end"
+                }
             }
         }
 
