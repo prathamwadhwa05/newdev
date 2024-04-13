@@ -40,8 +40,8 @@ pipeline {
         stage('Run container') {
             steps {
                 script {
-                    sh 'docker stop devopssimpleapitest'
-                    sh 'docker rm devopssimpleapitest'
+                    //sh 'docker stop devopssimpleapitest'
+                    //sh 'docker rm devopssimpleapitest'
                     sh "docker run -d --name devopssimpleapitest -p 8000:80 ${IMAGE_NAME}:${IMAGE_TAG}"
                 }
             }
