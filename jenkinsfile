@@ -4,7 +4,7 @@ agent any
  
 environment {
  
-    IMAGE_NAME='pratham5425/productservice'
+    IMAGE_NAME='pratham5425/productservicesample'
  
     IMAGE_TAG='latest'
  
