@@ -24,10 +24,12 @@ pipeline {
                 scannerHome = tool 'SonarScanner for MSBuild'
             }
             steps {
-                withSonarQubeEnv() {
-                    sh "dotnet ${scannerHome}/SonarScanner.MSBuild.dll begin /k:\"DevOps\""
-                    sh "dotnet build"
-                    sh "dotnet ${scannerHome}/SonarScanner.MSBuild.dll end"
+                script {
+                    withSonarQubeEnv('SonarQube-Server') {
+                        sh "dotnet ${scannerHome}/SonarScanner.MSBuild.dll begin /k:\"DevOps\""
+                        sh "dotnet build"
+                        sh "dotnet ${scannerHome}/SonarScanner.MSBuild.dll end"
+                    }
                 }
             }
         }
@@ -61,4 +63,3 @@ pipeline {
         }
     }
 }
-
