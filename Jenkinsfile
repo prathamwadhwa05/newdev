@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+        IMAGE_NAME = 'pratham5425/devopsapitest'
+        IMAGE_TAG = '1.2'
+    }
 
     stages {
         stage('Checkout') {
@@ -18,7 +22,32 @@ pipeline {
                 sh 'dotnet test'
             }
         }
+         stage('Docker Build') {
+            steps {
+                script {
+                    docker.build("${IMAGE_NAME}:${IMAGE_TAG}")
+                }
+            }
+        }
 
-        
+        stage('Docker Push') {
+            steps {
+                script {
+                    docker.withRegistry('https://index.docker.io/v1/', 'docker_login') {
+                        docker.image("${IMAGE_NAME}:${IMAGE_TAG}").push()
+                    }
+                }
+            }
+        }
+
+        stage('Run container') {
+            steps {
+                script {
+                   
+                    sh "docker run -d --name devopssimpleapitest -p 8000:80 ${IMAGE_NAME}:${IMAGE_TAG}"
+                }
+
+            }
+        }
     }
 }
