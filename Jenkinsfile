@@ -43,7 +43,8 @@ pipeline {
         stage('Run container') {
             steps {
                 script {
-                   
+                   sh 'docker stop dotnetapicontainer'
+                    sh 'docker rm dotnetapicontainer'
                     sh "docker run -d --name dotnetapicontainer -p 8055:80 ${IMAGE_NAME}:${IMAGE_TAG}"
                 }
 
