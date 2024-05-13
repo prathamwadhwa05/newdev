@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE_NAME = 'pratham5425/devopsapitest'
+        IMAGE_NAME = 'pratham5425/dotnetapitest'
         IMAGE_TAG = '1.2'
     }
 
@@ -44,7 +44,7 @@ pipeline {
             steps {
                 script {
                    
-                    sh "docker run -d --name devopssimpleapitest -p 8000:80 ${IMAGE_NAME}:${IMAGE_TAG}"
+                    sh "docker run -d --name dotnetapicontainer -p 8055:80 ${IMAGE_NAME}:${IMAGE_TAG}"
                 }
 
             }
