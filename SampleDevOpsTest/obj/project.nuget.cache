@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l2LTVtCjVywJ62aX1tjp+8Wg5xd5g6bcWMGbSEewmPRMKAy8/TAP7/Hyh2IjU3tFJALiLOQoFq5DSuC2PEnkcg==",
+  "dgSpecHash": "61Hb8F1eY6U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pratham\\source\\repos\\SampleDevops\\SampleDevOpsTest\\SampleDevOpsTest.csproj",
+  "projectFilePath": "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevOpsTest\\SampleDevOpsTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pratham\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\pratham\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
@@ -105,10 +105,7 @@
     "C:\\Users\\pratham\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
     "C:\\Users\\pratham\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
     "C:\\Users\\pratham\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
-    "C:\\Users\\pratham\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512",
-    "C:\\Users\\pratham\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\pratham\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\pratham\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+    "C:\\Users\\pratham\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
   ],
   "logs": []
 }
