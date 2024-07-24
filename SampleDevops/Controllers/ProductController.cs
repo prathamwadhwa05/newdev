@@ -24,6 +24,7 @@ namespace SampleDevops.Controllers
             try
             {
                 _productRepository.AddProduct(product);
+                Console.Writeline("CHange from GitHub 1");
 
 
                 return Ok(product);
