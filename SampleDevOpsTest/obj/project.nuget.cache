@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "61Hb8F1eY6U=",
+  "dgSpecHash": "Dt//RHfSZ0U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevOpsTest\\SampleDevOpsTest.csproj",
+  "projectFilePath": "C:\\Users\\pratham\\Desktop\\GitPractise\\newdev\\SampleDevOpsTest\\SampleDevOpsTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pratham\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\pratham\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",

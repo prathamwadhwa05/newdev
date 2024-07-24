@@ -6782,11 +6782,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevOpsTest\\SampleDevOpsTest.csproj",
+      "projectUniqueName": "C:\\Users\\pratham\\Desktop\\GitPractise\\newdev\\SampleDevOpsTest\\SampleDevOpsTest.csproj",
       "projectName": "SampleDevOpsTest",
-      "projectPath": "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevOpsTest\\SampleDevOpsTest.csproj",
+      "projectPath": "C:\\Users\\pratham\\Desktop\\GitPractise\\newdev\\SampleDevOpsTest\\SampleDevOpsTest.csproj",
       "packagesPath": "C:\\Users\\pratham\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevOpsTest\\obj\\",
+      "outputPath": "C:\\Users\\pratham\\Desktop\\GitPractise\\newdev\\SampleDevOpsTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pratham\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6804,8 +6804,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevops\\SampleDevops.csproj": {
-              "projectPath": "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevops\\SampleDevops.csproj"
+            "C:\\Users\\pratham\\Desktop\\GitPractise\\newdev\\SampleDevops\\SampleDevops.csproj": {
+              "projectPath": "C:\\Users\\pratham\\Desktop\\GitPractise\\newdev\\SampleDevops\\SampleDevops.csproj"
             }
           }
         }

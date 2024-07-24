@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevops\\SampleDevops.csproj": {}
+    "C:\\Users\\pratham\\Desktop\\GitPractise\\newdev\\SampleDevops\\SampleDevops.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevops\\SampleDevops.csproj": {
+    "C:\\Users\\pratham\\Desktop\\GitPractise\\newdev\\SampleDevops\\SampleDevops.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevops\\SampleDevops.csproj",
+        "projectUniqueName": "C:\\Users\\pratham\\Desktop\\GitPractise\\newdev\\SampleDevops\\SampleDevops.csproj",
         "projectName": "SampleDevops",
-        "projectPath": "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevops\\SampleDevops.csproj",
+        "projectPath": "C:\\Users\\pratham\\Desktop\\GitPractise\\newdev\\SampleDevops\\SampleDevops.csproj",
         "packagesPath": "C:\\Users\\pratham\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pratham\\Desktop\\Git_Practise\\newdev\\SampleDevops\\obj\\",
+        "outputPath": "C:\\Users\\pratham\\Desktop\\GitPractise\\newdev\\SampleDevops\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pratham\\AppData\\Roaming\\NuGet\\NuGet.Config",
