@@ -24,6 +24,9 @@ namespace SampleDevops.Controllers
             try
             {
                 _productRepository.AddProduct(product);
+                Console.WriteLine("Second Change From VS");
+                
+
 
 
                 return Ok(product);
