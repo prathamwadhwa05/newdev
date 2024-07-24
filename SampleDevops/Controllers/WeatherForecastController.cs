@@ -21,7 +21,7 @@ namespace SampleDevops.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-        Console.Writeline(First Change From Git);
+        Console.Writeline("First Change From Git");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
