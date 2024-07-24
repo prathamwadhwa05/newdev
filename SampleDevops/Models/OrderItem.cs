@@ -4,7 +4,7 @@
     {
         public Guid ProductId { get; set; }
         public string Name { get; set; }
-        public int InitialPrice { get; set; }
+        public int InitPrice { get; set; }
     }
     
     
